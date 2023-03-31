@@ -1,0 +1,222 @@
+/*====================HTML====================*/
+*{
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0px;
+}
+/*====================NAV BAR====================*/
+.navbar ul{  
+    padding:0;  
+    background:#333;  
+    font-family:Arial, sans serif;  
+    font-size:18px;  
+    text-transform:uppercase;
+}
+
+.navbar li{  
+    display:inline-block;
+}
+.navbar :hover{
+    color:#962fbf;
+}
+.navbar a{  
+    display:block;  
+    padding:10px;  
+    color:white;  
+    text-decoration:none;
+}
+/*====================MEDIA LINKS====================*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  .fa-instagram {
+    background: #962fbf;
+    color: rgb(255, 0, 0);
+  }
+/*====================Positions====================*/
+.pos_right{
+    right:0px;
+    float:right;
+}
+/*====================Hero Image====================*/
+  .hero {
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url("images/jacket.png");
+    background-size:cover;
+    background-position: center;
+    padding: 90px 15px;
+  }
+  .hero .hero-container {
+    text-align: center;
+    max-width: 1000px;
+    height:25%;
+    margin: 0 auto;
+  }
+/*====================Card====================*/
+.card {
+    width: 32%;
+    max-width: 300px;
+    min-width: 220px;
+    height: 550px;
+    border-radius: 30px;
+    background:white;  
+    margin: 20px;
+    box-shadow: 15px 15px 30px #962fbf,
+    -15px -15px 30px #ffffff;
+    display:inline-block;
+    overflow: hidden;
+  }
+  .title{
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    font-size: 30px;
+    height:15%;
+    width:90%;
+  }
+  .body{
+    text-align: left;
+    font-weight: normal;
+    padding:12px;
+    font-size: 18px;
+  }
+  .image{
+    margin:auto;
+    float:center;
+    display: block;
+    height:auto;
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+  }
+  .links{
+    height:10%;
+    width:90%;
+    float:right;
+    margin-left:10px;
+  }
+  .bigcard {
+    width: 85%;
+    max-width: 800px;
+    min-width: 400px;
+    height: 600px;
+    border-radius: 30px;
+    background:white;  
+    margin: 20px;
+    box-shadow: 15px 15px 30px #962fbf,
+    -15px -15px 30px #ffffff;
+    display:inline-block;
+    overflow: hidden;
+  }
+    .bigtitle{
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    font-size: 30px;
+    height:20%;
+    width:95%;
+  }
+  .bigbody{
+    text-align: left;
+    font-weight: normal;
+    padding:12px;
+    font-size: 18px;
+  }
+  .bigimage{
+    margin:auto;
+    float:center;
+    display: block;
+    height:auto;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+  }
+/*====================Heading Title====================*/
+.header {
+    position: relative;
+    font-size: 30px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.header:before, .header:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: red;
+}
+.header:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+/*====================Divider==================== CREDIT TO: St.G - Codepen*/
+        
+.divider {								/* minor cosmetics */
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+.divider span { display: table-cell; position: relative; }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #000);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #000);
+}
+.divider span:nth-child(2) {
+    color: #000; padding: 0px 5px; width: auto; white-space: nowrap;
+}
+.divider span:last-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #000, transparent);
+}
+/*====================Buttons====================*/
+button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;
+	color:#fff!important;
+	background-color:#9c27b0!important;
+}
